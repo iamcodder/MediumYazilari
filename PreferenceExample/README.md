@@ -1,1 +1,1 @@
-gif/ui.gif
+![Preferences Api Ui](gif/ui.gif)
