@@ -70,6 +70,10 @@
     <Preference
         app:key="webPage"
         app:icon="@drawable/ic_baseline_web_24"
-        app:title="@string/web_page" />
+        app:title="@string/web_page">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.patronusstudio.com" />
+    </Preference>
 
 </PreferenceScreen>
