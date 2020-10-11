@@ -1,0 +1,75 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_baseline_person_24"
+        app:title="@string/profile_info">
+
+        <EditTextPreference
+            app:key="name"
+            app:defaultValue="Not Entried Name"
+            app:title="Your Name"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="mail"
+            app:defaultValue="example@hello.com"
+            app:title="Mail Adress"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="gender"
+            app:defaultValue="Not Selected Gender"
+            app:entries="@array/gender_entries"
+            app:entryValues="@array/gender_values"
+            app:title="Select your gender"
+            app:useSimpleSummaryProvider="true" />
+
+        <SeekBarPreference
+            app:key="age"
+            android:max="100"
+            app:defaultValue="25"
+            app:min="0"
+            app:showSeekBarValue="true"
+            app:title="Age" />
+
+        <DropDownPreference
+            android:key="country"
+            android:defaultValue="Turkey"
+            android:entries="@array/country_entries"
+            android:entryValues="@array/country_values"
+            android:title="@string/your_country"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_baseline_invert_colors_24"
+        app:title="@string/app_info_title">
+        <SwitchPreferenceCompat
+            app:key="appThemeDark"
+            android:defaultValue="false"
+            app:title="@string/dark_theme" />
+        <SwitchPreferenceCompat
+            app:key="appThemeLight"
+            android:defaultValue="true"
+            app:title="@string/light_theme" />
+        <SwitchPreferenceCompat
+            app:dependency="appThemeLight"
+            app:key="colorBlindMode"
+            app:summaryOff="@string/blind_mode_passive"
+            app:summaryOn="@string/blind_mode_active"
+            app:title="@string/blind_mode" />
+    </PreferenceCategory>
+
+    <Preference
+        app:key="version"
+        app:icon="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+        app:title="Version 1.0.5" />
+
+    <Preference
+        app:key="webPage"
+        app:icon="@drawable/ic_baseline_web_24"
+        app:title="@string/web_page" />
+
+</PreferenceScreen>
