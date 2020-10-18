@@ -4,7 +4,7 @@
 ### Gifler
 
 <p float="left">
-<img src=gif/edx.gif width="150" />
-<img src=gif/gender.gif width="150" />
-<img src=gif/theme.gif width="150" />
+<img src=gif/edx.gif width="300" />
+<img src=gif/gender.gif width="300" />
+<img src=gif/theme.gif width="300" />
 </p>
